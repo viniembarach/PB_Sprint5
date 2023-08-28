@@ -48,6 +48,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
     # Instalar as dependências
     $ bundle install
 
+
 ```
 
 ---
