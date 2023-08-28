@@ -1,0 +1,12 @@
+#Execução multi ambiente 
+default: -p prd
+default_hml: -p hml
+
+#Environments   Tipos de ambientes
+hml: ENVIRONMENT="hml" #homologação
+prd: ENVIRONMENT="prd" #produção
+
+# Visual Mode
+headless: HEADLESS="true"
+
+#Criando diferentes perfils de execução para mudar conforme a execução do teste 
