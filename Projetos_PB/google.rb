@@ -1,3 +1,5 @@
+# Estava na pasta SitePrismCucumber/features/step_definition e precisou ser retirado
+
 Dado('que esteja na home') do
     @home_page = Home.new  # com o @ na frente da pra chamar em outros steps
     @home_page.load        # para carregar a pagina
