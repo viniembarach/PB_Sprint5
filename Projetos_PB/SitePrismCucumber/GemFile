@@ -6,5 +6,6 @@ gem 'site_prism'
 gem 'selenium-webdriver'
 gem 'rspec'
 gem 'pry'
+gem 'faker' #massa de dados Dinâmica
 # bundle install para instalar as gems
 # cucumber --init para facilitar

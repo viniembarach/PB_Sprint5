@@ -1,0 +1,6 @@
+valid_product: 'SPEAKERS' #o valid é a chave valor e o speakers é o valor
+
+#mesma coisa para colocar um login:
+# user_for_login:
+#   email: 'testehml@compass.com.br'
+#   password: '123456&'

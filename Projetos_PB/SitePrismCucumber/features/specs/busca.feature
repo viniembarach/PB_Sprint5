@@ -20,6 +20,7 @@ Funcionalidade: Busca
         Quando buscar pelo produto "<produto>"
         Então deverão ser retornados resultados na busca
         
+        #massa de dados
         Exemplos:
         | produto      |
         | Speakers     |

@@ -1,12 +1,15 @@
 Dado('que esteja na home') do
     @home_page = Pages::Home.new
     @home_page.load
+    #binding.pry
 end
 
 Quando('realizar uma busca por um produto existente') do
-    @home_page.search_for('SPEAKERS')
+    #@home_page.search_for('SPEAKERS')
+    product_for_search = Factory::Static.static_data('valid_product') # 
+    @home_page.search_for(product_for_search) #puxando da massa de dadso da support/factory
     @search_results_page = Pages::SearchResults.new
-end
+end 
 
 Então('deverão ser retornados resultados na busca') do
     #binding.pry

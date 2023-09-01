@@ -22,7 +22,7 @@ Capybara.register_driver :my_chrome do |app|
                                                                                                  "--ignore-certificate-errors", "--disable-popup-blocking", "--incognito", 
                                                                                                  "--start-maximized", "--window-size=1420,835", "--disable-gpu", 
                                                                                                  "--disable-translate", 
-                                                                                                 "--no-sandbox", "--acceptInsecureCerts=true", "--disable-impl-side-painting", "--debug level=3"]}) #para abrir de forma anonima
+                                                                                                 "--no-sandbox", "--acceptInsecureCerts=true", "--disable-impl-side-painting", "--debug-level=3"]}) #para abrir de forma anonima
     
     if ENV['HEADLESS'] # HEADLESS vai rodar mais rapido e em um servidor que não tem interface grafica dai vai precisar rodas em headless
         caps['goog:chromeOptions']['args'] << '--headless'
