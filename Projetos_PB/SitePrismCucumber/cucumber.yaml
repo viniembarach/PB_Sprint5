@@ -1,10 +1,18 @@
 #Execução multi ambiente 
-default: -p prd
-default_hml: -p hml
+default: --format pretty -p prd -p chrome -p html
+default_hml: -p hml -p chrome
+# o --format pretty é para mostrar o pass oa passo no terminal
+
+#reporters
+html: --format html --out=reports/report.html 
+#quando rodar usando esse profile HTML que ele gera sozinho o report
 
 #Environments   Tipos de ambientes
 hml: ENVIRONMENT="hml" #homologação
 prd: ENVIRONMENT="prd" #produção
+
+# Browsers
+chrome: BROWSER="chrome"
 
 # Visual Mode
 headless: HEADLESS="true"
