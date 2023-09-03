@@ -25,6 +25,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 - [Cucumber](https://github.com/cucumber/cucumber-ruby)
 - [Capybara](https://github.com/teamcapybara/capybara)
 - [SitePrism](https://github.com/site-prism/site_prism)
+- [Faker](https://github.com/faker-ruby/faker)
 
 ---
 
@@ -40,14 +41,47 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 
 ## 🗂 Como baixar o projeto
 
+### Requisitos
+
+- [Ruby-2.5.3-1](https://rubyinstaller.org/downloads/archives/)
+- [Cmder](https://github.com/cmderdev/cmder)
+
+
 ```bash
 
     # Clonar o repositório
     $ git clone https://github.com/viniembarach/PB_Sprint5
 
+```
+
+### Capybara e Cucumber
+```bash
+
+    # Acessar a pasta
+    $ cd CapybaraCucumber
+
     # Instalar as dependências
     $ bundle install
 
+    # Executar os testes
+    $ bundle exec cucumber
+
+```
+
+### SitePrism e Cucumber
+```bash
+
+    # Acessar a pasta
+    $ cd SitePrismCucumber
+
+    # Instalar as dependências
+    $ bundle install
+
+    # Executar todos os testes
+    $ bundle exec cucumber
+
+    # Executar os demais testes
+    $ bundle exec cucumber -p default -t@tag_do_teste
 
 ```
 
