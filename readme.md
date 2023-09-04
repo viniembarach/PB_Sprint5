@@ -78,7 +78,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
     $ bundle install
 
     # Executar todos os testes
-    $ bundle exec cucumber
+    $ bundle exec cucumber -p default
 
     # Executar os demais testes
     $ bundle exec cucumber -p default -t@tag_do_teste
